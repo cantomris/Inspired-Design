@@ -137,16 +137,6 @@ menu.addEventListener('click', () => {
 
   }
 
-  function turnRight() {
-    menu.style.transform = "rotate(180deg)";
-    
-  }
-
-  function turnLeft() {
-    menu.style.transform = "rotate(-90deg)";
-    
-  }
-
   function fullView() {
     sideBar.style.width = "100%";
     navContent.style.display = "block";
@@ -166,10 +156,9 @@ menu.addEventListener('click', () => {
 
     if (windowWidth < "500") {
       fullView();
-      turnLeft();
+
     } else {
       halfView();
-      turnRight()
     }
   }
 
@@ -190,11 +179,9 @@ menu.addEventListener('click', () => {
       if (windowWidth < "500") {
         closeNav();
         showBtn();
-        turnRight();
       } else {
         closeNav();
         showBtn();
-        turnLeft();
       }
 
     }
